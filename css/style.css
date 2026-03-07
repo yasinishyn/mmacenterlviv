@@ -8018,6 +8018,9 @@ h1, h2, h3, h4, h5,
       height: 58vh;
       min-height: 400px;
       background-position: center bottom; } }
+    .coach:after{
+      display: none;
+    }
   .coach .text .subheading {
     font-weight: 500;
     text-transform: uppercase;
