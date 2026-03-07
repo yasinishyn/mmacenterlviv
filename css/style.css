@@ -7979,6 +7979,9 @@ h1, h2, h3, h4, h5,
   background: #000;
   z-index: 0;
   position: relative; }
+  @media (min-width: 576px) {
+    .coach {
+      display: flex; } }
   @media (max-width: 991.98px) {
     .coach {
       margin-bottom: 30px; } }
@@ -8004,13 +8007,16 @@ h1, h2, h3, h4, h5,
   .coach .img, .coach .text {
     width: 50%; }
   .coach .img {
-    background-position: top center; }
+    background-position: top center;
+    min-height: 500px;
+    align-self: stretch; }
   @media (max-width: 767.98px) {
     .coach .img, .coach .text {
       width: 100%;
       display: block; }
     .coach .img {
-      height: 300px; } }
+      height: 60vh;
+      min-height: 400px; } }
   .coach .text .subheading {
     font-weight: 500;
     text-transform: uppercase;
