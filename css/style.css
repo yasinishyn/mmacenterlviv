@@ -9142,9 +9142,61 @@ textarea.form-control {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.1rem !important;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar .nav-item {
+    padding: 0 0.3rem;
+  }
+  .navbar .nav-item.dropdown {
+    padding-right: 0.8rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.3rem;
+    white-space: nowrap;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    background-color: #000;
+    border: 1px solid rgba(255,255,255,0.1);
+    min-width: auto;
+  }
+
+  .dropdown-item {
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .dropdown-item:hover {
+    background-color: #333;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #000;
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #333;
+  color: #fff;
+}
